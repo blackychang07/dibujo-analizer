@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <title>Identificador de dibujos</title>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+
+</head>
+<body>
+  
+<div id="myModal" class="modal fade">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">dibujos</h4>
+            <button class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+            <img src="sketches.png" alt="">
+        </div>
+    </div>
+</div>
+
+<h1>idetificacion de dibujos
+    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Mostrar dibujos</button>
+</h1>
+<p id="dibujo">dibujos:</p>
+<p id="confianza">confianza</p>
+<button class="btn btn-danger" onclick="borrar()">borrar lienzo</button>
+<br>
+<br>
+</body>
+</html>

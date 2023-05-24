@@ -1,0 +1,24 @@
+body
+{
+text-align: center;
+background-image: url(fondo-dia-mundial-arte-acuarela_23-2149327049.avif);
+background-size: cover;
+}
+
+@keyframes identifier {
+    from{
+        box-shadow: 5px 5px 5px black;
+    }
+    to
+    {
+    box-shadow: 5px 5px 5px cyan;
+    }
+    }
+
+    canvas
+    {
+    animation-name: identifier;
+    animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
